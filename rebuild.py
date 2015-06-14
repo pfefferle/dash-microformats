@@ -37,11 +37,22 @@ for filename in os.listdir(os.path.join(DOCUMENTS_DIR, MICROFORMATS_DIR)):
         print 'title: %s, path: %s' % (title, path)
 
     # add each Microformat properties
-    for property in soup.find_all('dt'):
-        name = property.text.strip()
-        path = os.path.join(MICROFORMATS_DIR, filename) + '#' + name
-        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path) VALUES (?,?,?)', (title + ": " + name, 'Property', path))
-        print 'name: %s, path: %s' % (name, path)
+    for tag in soup.find_all('dt'):
+        dashAnchor = tag.find('a', class_='dashAnchor')
+        if dashAnchor:
+            continue
+
+        text = tag.text.strip()
+
+        #print 'adding toc tag for section: %s' % text
+        name = '//apple_ref/cpp/Property/' + urllib.quote(text, '')
+        dashAnchor = BeautifulSoup('<a name="%s" class="dashAnchor"></a>' % name).a
+        tag.insert(0, dashAnchor)
+        print 'name: %s, path: %s' % (text, path)
+
+    fp = open(os.path.join(DOCUMENTS_DIR, MICROFORMATS_DIR, filename), 'w')
+    fp.write(str(soup))
+    fp.close()
 
 page = open(os.path.join(DOCUMENTS_DIR, XFN_DIR, "11.html")).read()
 
@@ -58,12 +69,23 @@ if len(title) > 0:
     cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path) VALUES (?,?,?)', (title, 'Object', path))
     print 'title: %s, path: %s' % (title, path)
 
-# add XFN properties
-for property in soup.find_all('dt'):
-    name = property.text.strip()
-    path = os.path.join(XFN_DIR, "11.html") + '#' + name
-    cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path) VALUES (?,?,?)', (title + ": " + name, 'Property', path))
-    print 'name: %s, path: %s' % (name, path)
+# add each Microformat properties
+for tag in soup.find_all('dt'):
+    dashAnchor = tag.find('a', class_='dashAnchor')
+    if dashAnchor:
+        continue
+
+    text = tag.text.strip()
+
+    #print 'adding toc tag for section: %s' % text
+    name = '//apple_ref/cpp/Property/' + urllib.quote(text, '')
+    dashAnchor = BeautifulSoup('<a name="%s" class="dashAnchor"></a>' % name).a
+    tag.insert(0, dashAnchor)
+    print 'name: %s, path: %s' % (text, path)
+
+fp = open(os.path.join(DOCUMENTS_DIR, XFN_DIR, "11.html"), 'w')
+fp.write(str(soup))
+fp.close()
 
 page = open(os.path.join(DOCUMENTS_DIR, MICROFORMATS_DIR, filename)).read()
 

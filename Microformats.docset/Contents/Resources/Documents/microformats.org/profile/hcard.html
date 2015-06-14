@@ -1,5 +1,237 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- Mirrored from microformats.org/profile/hcard by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Mar 2015 21:59:26 GMT -->
-<head profile="http://gmpg.org/xmdp/1 http://microformats.org/profile/rel-license http://microformats.org/profile/hcard"><title>hCard 1.0.1 XMDP profile</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><style type="text/css">/*<![CDATA[*/body { background: #FCFAEA; color: black; font: small/1.2 Verdana, Arial, sans-serif; margin: 0; padding: 2em 10%; }dl { margin:0 0 0 2em }dt { font-weight:bold } h3 { margin:0; font-weight:normal; font-size:1em } h3:first-letter { text-transform:capitalize; }h2 a { display:block; margin-left:2em }#warning { border: 1px solid red; background-color: #c33; padding: 1em;}/*]]>*/</style><link rel="copyright" href="#copyright" title="Copyright" /></head><body><h1>hCard 1.0.1 <abbr title="XHTML Meta Data Profile">XMDP</abbr> profile</h1><h2>Author</h2><ul id="authors"><li class="vcard"><a class="fn url uid" href="http://tantek.com/">Tantek &Ccedil;elik</a></li></ul><p>As described in <a href="http://www.w3.org/TR/html401/struct/global.html#h-7.4.4.3">HTML4 Meta data profiles</a> and <a href="http://gmpg.org/xmdp/description">XHTML Meta Data Profile (XMDP) description</a>:</p><dl class="profile"> <dt id="rel">rel</dt> <dd><p>   <a rel="help" href="http://www.w3.org/TR/html401/struct/links.html#adef-rel">     HTML4 definition of the 'rel' attribute.</a>     Here is an additional value as defined in the   <a rel="help start" href="http://microformats.org/wiki/rel-tag">   rel-tag specification</a>    .</p>  <dl>   <dt id="tag">tag</dt>   <dd>Indicates that the referred resource serves as a "tag",        or keyword/subject, for the referring page, or some portion of the referring page (such as an hCard).</dd>  </dl> </dd> <dt>class</dt> <dd><p>  <a href="http://www.w3.org/TR/html401/struct/global.html#adef-class">   HTML4 definition of the 'class' attribute.</a>  This meta data profile defines some 'class' attribute values (class names)   and their meanings as suggested by a   <a href="http://www.w3.org/TR/WD-htmllink-970328#profile">   draft of "Hypertext Links in HTML"</a>.  All values are defined according to the semantics defined in the   <a rel="help start" href="http://microformats.org/wiki/hcard">   hCard specification</a>   and thus in   <a href="http://www.ietf.org/rfc/rfc2426.txt">RFC 2426</a>.</p>  <dl>   <dt id="vcard">vcard</dt>    <dd>A container for the rest of the class names defined in this XMDP profile.     See section 1. of RFC 2426.    </dd>   <dt id="fn">fn</dt>    <dd>See section 3.1.1 of RFC 2426.</dd>   <dt id="n">n</dt>    <dd>See section 3.1.2 of RFC 2426. May be inferred per       Implied "N" Optimization.</dd>   <dt id="family-name">family-name</dt>    <dd>See "Family Name" in section 3.1.2 of RFC 2426.</dd>   <dt id="given-name">given-name</dt>    <dd>See "Given Name" in section 3.1.2 of RFC 2426.</dd>   <dt id="additional-name">additional-name</dt>    <dd>See "Additional Names" in section 3.1.2 of RFC 2426.</dd>   <dt id="honorific-prefix">honorific-prefix</dt>    <dd>See "Honorific Prefixes" in section 3.1.2 of RFC 2426.</dd>   <dt id="honorific-suffix">honorific-suffix</dt>    <dd>See "Honorific Suffixes" in section 3.1.2 of RFC 2426.</dd>      <dt id="nickname">nickname</dt>    <dd>See section 3.1.3 of RFC 2426.</dd>   <dt id="photo">photo</dt>    <dd>See section 3.1.4 of RFC 2426. Typically used with an &lt;img&gt; tag.     Use the 'src' attribute for URI values. Use the 'data:' URI scheme for     binary values.</dd>   <dt id="bday">bday</dt>    <dd>See section 3.1.5 of RFC 2426. Typically used with an &lt;abbr&gt; tag      with the 'title' attribute for the date value, and a human readable date     inside the element.</dd>    <dt id="adr">adr</dt>    <dd>See section 3.2.1 of RFC 2426.</dd>   <dt id="post-office-box">post-office-box</dt>    <dd>See "post office box" in section 3.2.1 of RFC 2426.</dd>   <dt id="extended-address">extended-address</dt>    <dd>See "extended address" in section 3.2.1 of RFC 2426.</dd>   <dt id="street-address">street-address</dt>    <dd>See "street address" in section 3.2.1 of RFC 2426.</dd>   <dt id="locality">locality</dt>    <dd>See "locality" in section 3.2.1 of RFC 2426.</dd>   <dt id="region">region</dt>    <dd>See "region" in section 3.2.1 of RFC 2426.</dd>   <dt id="postal-code">postal-code</dt>    <dd>See "postal code" in section 3.2.1 of RFC 2426.</dd>   <dt id="country-name">country-name</dt>    <dd>See "country name" in section 3.2.1 of RFC 2426.</dd>   <dt id="type">type</dt>    <dd>See "type" in the various sections of RFC 2426.</dd>   <dt id="label">label</dt>    <dd>See section 3.2.2 of RFC 2426.</dd>   <dt id="tel">tel</dt>    <dd>See section 3.3.1 of RFC 2426.</dd>   <dt id="email">email</dt>    <dd>See section 3.3.2 of RFC 2426.</dd>   <dt id="mailer">mailer</dt>    <dd>See section 3.3.3 of RFC 2426.</dd>   <dt id="tz">tz</dt>    <dd>See section 3.4.1 of RFC 2426. Typically used with an &lt;abbr&gt; tag      with the 'title' attribute for the tz value, and a human readable time zone     inside the element.</dd>   <dt id="geo">geo</dt>    <dd>See section 3.4.2 of RFC 2426.</dd>   <dt id="latitude">latitude</dt>    <dd>See "latitude" in section 3.4.2 of RFC 2426.</dd>   <dt id="longitude">longitude</dt>    <dd>See "longitude" in section 3.4.2 of RFC 2426.</dd>   <dt id="title">title</dt>    <dd>See section 3.5.1 of RFC 2426.</dd>   <dt id="role">role</dt>    <dd>See section 3.5.2 of RFC 2426.</dd>   <dt id="logo">logo</dt>    <dd>See section 3.5.3 of RFC 2426. Typically used with an &lt;img&gt; tag.     Use the 'src' attribute for URI values. Use the 'data:' URI scheme for     binary values.</dd>   <dt id="agent">agent</dt>    <dd>See section 3.5.4 of RFC 2426. If the value is a vCard, then     use a nest hCard.  For simplicity in that case, the same element that     has the class name of "agent" should use the class name of "vcard".</dd>   <dt id="org">org</dt>    <dd>See section 3.5.5 of RFC 2426.</dd>   <dt id="organization-name">organization-name</dt>    <dd>See "Organization Name" in section 3.5.5 of RFC 2426.       May be inferred per Implied "organization-name" Optimization.</dd>   <dt id="organization-unit">organization-unit</dt>    <dd>See "Organization Unit" in section 3.5.5 of RFC 2426.</dd>       <dt id="category">category</dt>    <dd>See section 3.6.1 of RFC 2426.</dd>   <dt id="note">note</dt>    <dd>See section 3.6.2 of RFC 2426.</dd>   <dt id="rev">rev</dt>    <dd>See section 3.6.4 of RFC 2426. Typically used with an &lt;abbr&gt; tag      with the 'title' attribute for the date value, and a human readable date     inside the element.</dd>   <dt id="sort-string">sort-string</dt>    <dd>See section 3.6.5 of RFC 2426.</dd>   <dt id="sound">sound</dt>    <dd>See section 3.6.6 of RFC 2426. Typically used with either an &lt;a&gt;     or &lt;object&gt; tag. Use the 'data:' URI scheme for binary values.</dd>   <dt id="uid">uid</dt>    <dd>See section 3.6.7 of RFC 2426.</dd>   <dt id="url">url</dt>    <dd>See section 3.6.8 of RFC 2426. Typically used with an &lt;a&gt; tag.    </dd>   <dt id="class">class</dt>    <dd>See section 3.7.1 of RFC 2426.</dd>   <dt id="key">key</dt>    <dd>See section 3.7.2 of RFC 2426. Typically used with an &lt;abbr&gt; tag      with the 'title' attribute for the key value, and a human readable key     equivalent inside the element.</dd>        <dt id="value">value</dt>    <dd>This class name is used to distinguish the <em>actual</em> value     of a property from any other cruft that may be in      the containing element representing the property.     See the      <a href="http://microformats.org/wiki/value-class-pattern">       value-class-pattern</a> for details.</dd>   <dt id="value-title">value-title</dt>    <dd>This class name is used to distinguish the <em>actual</em> value     of a property, specifically in the 'title' attribute of the element,     from the element contents and the element representing      the containing property.     See the      <a href="http://microformats.org/wiki/value-class-pattern#Parsing_value_from_a_title_attribute">       value-class-pattern value-title description</a> for details.</dd>  </dl> </dd></dl><h2>Changes from hCard 1.0</h2><p id="changes">The '<a href="#value-title">value-title</a>' class name has been incorporated from the <a href="http://microformats.org/wiki/value-class-pattern">value-class-pattern</a> for improved accessibility, internationalization, and localization.</p><h2>Copyright</h2><p id="copyright">Contributed to the public domain (PD) 2009 microformats.org, per the <a rel="license" href="http://creativecommons.org/licenses/publicdomain/">Creative Commons Public Domain License</a> or any later version published by Creative Commons; with a waiver of rights, and an assertion that no rights attach to this particular work.</p></body>
-<!-- Mirrored from microformats.org/profile/hcard by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Mar 2015 21:59:26 GMT -->
-</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><!-- Mirrored from microformats.org/profile/hcard by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Jun 2015 09:07:52 GMT --><head profile="http://gmpg.org/xmdp/1 http://microformats.org/profile/rel-license http://microformats.org/profile/hcard"><title>hCard 1.0.1 XMDP profile</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<style type="text/css">
+/*<![CDATA[*/
+body { background: #FCFAEA; color: black; font: small/1.2 Verdana, Arial, sans-serif; margin: 0; padding: 2em 10%; }
+dl { margin:0 0 0 2em }
+dt { font-weight:bold } 
+h3 { margin:0; font-weight:normal; font-size:1em } 
+h3:first-letter { text-transform:capitalize; }
+h2 a { display:block; margin-left:2em }
+#warning { border: 1px solid red; background-color: #c33; padding: 1em;}
+/*]]>*/
+</style>
+<link href="#copyright" rel="copyright" title="Copyright"/>
+</head>
+<body>
+<h1>hCard 1.0.1 <abbr title="XHTML Meta Data Profile">XMDP</abbr> profile</h1>
+<h2>Author</h2>
+<ul id="authors">
+<li class="vcard"><a class="fn url uid" href="http://tantek.com/">Tantek Çelik</a></li>
+</ul>
+<p>As described in <a href="http://www.w3.org/TR/html401/struct/global.html#h-7.4.4.3">HTML4 Meta data profiles</a> and <a href="http://gmpg.org/xmdp/description">XHTML Meta Data Profile (XMDP) description</a>:</p>
+
+<dl class="profile">
+ <dt id="rel"><a class="dashAnchor" name="//apple_ref/cpp/Property/rel"></a>rel</dt>
+ <dd><p>
+   <a href="http://www.w3.org/TR/html401/struct/links.html#adef-rel" rel="help">
+     HTML4 definition of the 'rel' attribute.</a>  
+   Here is an additional value as defined in the
+   <a href="http://microformats.org/wiki/rel-tag" rel="help start">
+   rel-tag specification</a> 
+   .</p>
+  <dl>
+   <dt id="tag"><a class="dashAnchor" name="//apple_ref/cpp/Property/tag"></a>tag</dt>
+   <dd>Indicates that the referred resource serves as a "tag", 
+       or keyword/subject, for the referring page, or some portion of the referring page (such as an hCard).</dd>
+  </dl>
+ </dd>
+ <dt><a class="dashAnchor" name="//apple_ref/cpp/Property/class"></a>class</dt>
+ <dd><p>
+  <a href="http://www.w3.org/TR/html401/struct/global.html#adef-class">
+   HTML4 definition of the 'class' attribute.</a>
+  This meta data profile defines some 'class' attribute values (class names) 
+  and their meanings as suggested by a 
+  <a href="http://www.w3.org/TR/WD-htmllink-970328#profile">
+   draft of "Hypertext Links in HTML"</a>.
+  All values are defined according to the semantics defined in the 
+  <a href="http://microformats.org/wiki/hcard" rel="help start">
+   hCard specification</a> 
+  and thus in 
+  <a href="http://www.ietf.org/rfc/rfc2426.txt">RFC 2426</a>.</p>
+  <dl>
+   <dt id="vcard"><a class="dashAnchor" name="//apple_ref/cpp/Property/vcard"></a>vcard</dt>
+    <dd>A container for the rest of the class names defined in this XMDP profile.
+     See section 1. of RFC 2426.
+    </dd>
+
+   <dt id="fn"><a class="dashAnchor" name="//apple_ref/cpp/Property/fn"></a>fn</dt>
+    <dd>See section 3.1.1 of RFC 2426.</dd>
+
+   <dt id="n"><a class="dashAnchor" name="//apple_ref/cpp/Property/n"></a>n</dt>
+    <dd>See section 3.1.2 of RFC 2426. May be inferred per 
+      Implied "N" Optimization.</dd>
+
+   <dt id="family-name"><a class="dashAnchor" name="//apple_ref/cpp/Property/family-name"></a>family-name</dt>
+    <dd>See "Family Name" in section 3.1.2 of RFC 2426.</dd>
+
+   <dt id="given-name"><a class="dashAnchor" name="//apple_ref/cpp/Property/given-name"></a>given-name</dt>
+    <dd>See "Given Name" in section 3.1.2 of RFC 2426.</dd>
+
+   <dt id="additional-name"><a class="dashAnchor" name="//apple_ref/cpp/Property/additional-name"></a>additional-name</dt>
+    <dd>See "Additional Names" in section 3.1.2 of RFC 2426.</dd>
+
+   <dt id="honorific-prefix"><a class="dashAnchor" name="//apple_ref/cpp/Property/honorific-prefix"></a>honorific-prefix</dt>
+    <dd>See "Honorific Prefixes" in section 3.1.2 of RFC 2426.</dd>
+
+   <dt id="honorific-suffix"><a class="dashAnchor" name="//apple_ref/cpp/Property/honorific-suffix"></a>honorific-suffix</dt>
+    <dd>See "Honorific Suffixes" in section 3.1.2 of RFC 2426.</dd>
+   
+   <dt id="nickname"><a class="dashAnchor" name="//apple_ref/cpp/Property/nickname"></a>nickname</dt>
+    <dd>See section 3.1.3 of RFC 2426.</dd>
+
+   <dt id="photo"><a class="dashAnchor" name="//apple_ref/cpp/Property/photo"></a>photo</dt>
+    <dd>See section 3.1.4 of RFC 2426. Typically used with an &lt;img&gt; tag.
+     Use the 'src' attribute for URI values. Use the 'data:' URI scheme for
+     binary values.</dd>
+
+   <dt id="bday"><a class="dashAnchor" name="//apple_ref/cpp/Property/bday"></a>bday</dt>
+    <dd>See section 3.1.5 of RFC 2426. Typically used with an &lt;abbr&gt; tag 
+     with the 'title' attribute for the date value, and a human readable date
+     inside the element.</dd>
+ 
+   <dt id="adr"><a class="dashAnchor" name="//apple_ref/cpp/Property/adr"></a>adr</dt>
+    <dd>See section 3.2.1 of RFC 2426.</dd>
+
+   <dt id="post-office-box"><a class="dashAnchor" name="//apple_ref/cpp/Property/post-office-box"></a>post-office-box</dt>
+    <dd>See "post office box" in section 3.2.1 of RFC 2426.</dd>
+
+   <dt id="extended-address"><a class="dashAnchor" name="//apple_ref/cpp/Property/extended-address"></a>extended-address</dt>
+    <dd>See "extended address" in section 3.2.1 of RFC 2426.</dd>
+
+   <dt id="street-address"><a class="dashAnchor" name="//apple_ref/cpp/Property/street-address"></a>street-address</dt>
+    <dd>See "street address" in section 3.2.1 of RFC 2426.</dd>
+
+   <dt id="locality"><a class="dashAnchor" name="//apple_ref/cpp/Property/locality"></a>locality</dt>
+    <dd>See "locality" in section 3.2.1 of RFC 2426.</dd>
+
+   <dt id="region"><a class="dashAnchor" name="//apple_ref/cpp/Property/region"></a>region</dt>
+    <dd>See "region" in section 3.2.1 of RFC 2426.</dd>
+
+   <dt id="postal-code"><a class="dashAnchor" name="//apple_ref/cpp/Property/postal-code"></a>postal-code</dt>
+    <dd>See "postal code" in section 3.2.1 of RFC 2426.</dd>
+
+   <dt id="country-name"><a class="dashAnchor" name="//apple_ref/cpp/Property/country-name"></a>country-name</dt>
+    <dd>See "country name" in section 3.2.1 of RFC 2426.</dd>
+
+   <dt id="type"><a class="dashAnchor" name="//apple_ref/cpp/Property/type"></a>type</dt>
+    <dd>See "type" in the various sections of RFC 2426.</dd>
+
+   <dt id="label"><a class="dashAnchor" name="//apple_ref/cpp/Property/label"></a>label</dt>
+    <dd>See section 3.2.2 of RFC 2426.</dd>
+
+   <dt id="tel"><a class="dashAnchor" name="//apple_ref/cpp/Property/tel"></a>tel</dt>
+    <dd>See section 3.3.1 of RFC 2426.</dd>
+
+   <dt id="email"><a class="dashAnchor" name="//apple_ref/cpp/Property/email"></a>email</dt>
+    <dd>See section 3.3.2 of RFC 2426.</dd>
+
+   <dt id="mailer"><a class="dashAnchor" name="//apple_ref/cpp/Property/mailer"></a>mailer</dt>
+    <dd>See section 3.3.3 of RFC 2426.</dd>
+
+   <dt id="tz"><a class="dashAnchor" name="//apple_ref/cpp/Property/tz"></a>tz</dt>
+    <dd>See section 3.4.1 of RFC 2426. Typically used with an &lt;abbr&gt; tag 
+     with the 'title' attribute for the tz value, and a human readable time zone
+     inside the element.</dd>
+
+   <dt id="geo"><a class="dashAnchor" name="//apple_ref/cpp/Property/geo"></a>geo</dt>
+    <dd>See section 3.4.2 of RFC 2426.</dd>
+
+   <dt id="latitude"><a class="dashAnchor" name="//apple_ref/cpp/Property/latitude"></a>latitude</dt>
+    <dd>See "latitude" in section 3.4.2 of RFC 2426.</dd>
+
+   <dt id="longitude"><a class="dashAnchor" name="//apple_ref/cpp/Property/longitude"></a>longitude</dt>
+    <dd>See "longitude" in section 3.4.2 of RFC 2426.</dd>
+
+   <dt id="title"><a class="dashAnchor" name="//apple_ref/cpp/Property/title"></a>title</dt>
+    <dd>See section 3.5.1 of RFC 2426.</dd>
+
+   <dt id="role"><a class="dashAnchor" name="//apple_ref/cpp/Property/role"></a>role</dt>
+    <dd>See section 3.5.2 of RFC 2426.</dd>
+
+   <dt id="logo"><a class="dashAnchor" name="//apple_ref/cpp/Property/logo"></a>logo</dt>
+    <dd>See section 3.5.3 of RFC 2426. Typically used with an &lt;img&gt; tag.
+     Use the 'src' attribute for URI values. Use the 'data:' URI scheme for
+     binary values.</dd>
+
+   <dt id="agent"><a class="dashAnchor" name="//apple_ref/cpp/Property/agent"></a>agent</dt>
+    <dd>See section 3.5.4 of RFC 2426. If the value is a vCard, then 
+    use a nest hCard.  For simplicity in that case, the same element that 
+    has the class name of "agent" should use the class name of "vcard".</dd>
+
+   <dt id="org"><a class="dashAnchor" name="//apple_ref/cpp/Property/org"></a>org</dt>
+    <dd>See section 3.5.5 of RFC 2426.</dd>
+
+   <dt id="organization-name"><a class="dashAnchor" name="//apple_ref/cpp/Property/organization-name"></a>organization-name</dt>
+    <dd>See "Organization Name" in section 3.5.5 of RFC 2426. 
+      May be inferred per Implied "organization-name" Optimization.</dd>
+
+   <dt id="organization-unit"><a class="dashAnchor" name="//apple_ref/cpp/Property/organization-unit"></a>organization-unit</dt>
+    <dd>See "Organization Unit" in section 3.5.5 of RFC 2426.</dd>    
+
+   <dt id="category"><a class="dashAnchor" name="//apple_ref/cpp/Property/category"></a>category</dt>
+    <dd>See section 3.6.1 of RFC 2426.</dd>
+
+   <dt id="note"><a class="dashAnchor" name="//apple_ref/cpp/Property/note"></a>note</dt>
+    <dd>See section 3.6.2 of RFC 2426.</dd>
+
+   <dt id="rev"><a class="dashAnchor" name="//apple_ref/cpp/Property/rev"></a>rev</dt>
+    <dd>See section 3.6.4 of RFC 2426. Typically used with an &lt;abbr&gt; tag 
+     with the 'title' attribute for the date value, and a human readable date
+     inside the element.</dd>
+
+   <dt id="sort-string"><a class="dashAnchor" name="//apple_ref/cpp/Property/sort-string"></a>sort-string</dt>
+    <dd>See section 3.6.5 of RFC 2426.</dd>
+
+   <dt id="sound"><a class="dashAnchor" name="//apple_ref/cpp/Property/sound"></a>sound</dt>
+    <dd>See section 3.6.6 of RFC 2426. Typically used with either an &lt;a&gt;
+     or &lt;object&gt; tag. Use the 'data:' URI scheme for binary values.</dd>
+
+   <dt id="uid"><a class="dashAnchor" name="//apple_ref/cpp/Property/uid"></a>uid</dt>
+    <dd>See section 3.6.7 of RFC 2426.</dd>
+
+   <dt id="url"><a class="dashAnchor" name="//apple_ref/cpp/Property/url"></a>url</dt>
+    <dd>See section 3.6.8 of RFC 2426. Typically used with an &lt;a&gt; tag.
+    </dd>
+
+   <dt id="class"><a class="dashAnchor" name="//apple_ref/cpp/Property/class"></a>class</dt>
+    <dd>See section 3.7.1 of RFC 2426.</dd>
+
+   <dt id="key"><a class="dashAnchor" name="//apple_ref/cpp/Property/key"></a>key</dt>
+    <dd>See section 3.7.2 of RFC 2426. Typically used with an &lt;abbr&gt; tag 
+     with the 'title' attribute for the key value, and a human readable key
+     equivalent inside the element.</dd>
+     
+   <dt id="value"><a class="dashAnchor" name="//apple_ref/cpp/Property/value"></a>value</dt>
+    <dd>This class name is used to distinguish the <em>actual</em> value
+     of a property from any other cruft that may be in 
+     the containing element representing the property.
+     See the 
+     <a href="http://microformats.org/wiki/value-class-pattern"> 
+      value-class-pattern</a> for details.</dd>
+
+   <dt id="value-title"><a class="dashAnchor" name="//apple_ref/cpp/Property/value-title"></a>value-title</dt>
+    <dd>This class name is used to distinguish the <em>actual</em> value
+     of a property, specifically in the 'title' attribute of the element,
+     from the element contents and the element representing 
+     the containing property.
+     See the 
+     <a href="http://microformats.org/wiki/value-class-pattern#Parsing_value_from_a_title_attribute"> 
+      value-class-pattern value-title description</a> for details.</dd>
+
+  </dl>
+ </dd>
+</dl>
+
+<h2>Changes from hCard 1.0</h2>
+<p id="changes">The '<a href="#value-title">value-title</a>' class name has been incorporated from the <a href="http://microformats.org/wiki/value-class-pattern">value-class-pattern</a> for improved accessibility, internationalization, and localization.
+</p>
+
+<h2>Copyright</h2>
+<p id="copyright">Contributed to the public domain (PD) 2009 microformats.org, per the <a href="http://creativecommons.org/licenses/publicdomain/" rel="license">Creative Commons Public Domain License</a> or any later version published by Creative Commons; with a waiver of rights, and an assertion that no rights attach to this particular work.</p>
+
+
+
+
+</body><!-- Mirrored from microformats.org/profile/hcard by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Jun 2015 09:07:52 GMT --></html>

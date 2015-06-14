@@ -1,5 +1,71 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- Mirrored from microformats.org/profile/xfolk by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Mar 2015 21:59:26 GMT -->
-<head profile="http://gmpg.org/xmdp/1 http://microformats.org/profile/rel-license http://microformats.org/profile/hcard"><title>xFolk RC1 XMDP profile</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><style type="text/css">/*<![CDATA[*/body { background: #FCFAEA; color: black; font: small/1.2 Verdana, Arial, sans-serif; margin: 0; padding: 2em 10%; }dl { margin:0 0 0 2em }dt { font-weight:bold } h3 { margin:0; font-weight:normal; font-size:1em } h3:first-letter { text-transform:capitalize; }h2 a { display:block; margin-left:2em }#warning { border: 1px solid red; background-color: #c33; padding: 1em;}/*]]>*/</style><link rel="copyright" href="#copyright" title="Copyright" /></head><body><h1>xFolk RC1 <abbr title="XHTML Meta Data Profile">XMDP</abbr> profile</h1><h2>Authors</h2><ul id="authors"><li class="vcard"><a class="fn url uid" href="http://tantek.com/">Tantek &Ccedil;elik</a></li><li class="vcard"><a class="fn url" href="http://thecommunityengine.com/">Bud Gibson</a></li></ul><p>As described in <a href="http://www.w3.org/TR/html401/struct/global.html#h-7.4.4.3">HTML4 Meta data profiles</a>, and <a href="http://gmpg.org/xmdp/description">XHTML Meta Data Profile (XMDP) description</a>.</p> <dl class="profile">   <dt id="rel">rel</dt>   <dd><p>     <a rel="help" href="http://www.w3.org/TR/html401/struct/links.html#adef-rel">       HTML4 definition of the 'rel' attribute.</a>       Here is an additional value as defined in the     <a rel="help start" href="http://microformats.org/wiki/rel-tag">     rel-tag specification</a>      .</p>    <dl>     <dt id="tag">tag</dt>   <dd>Indicates that the referred resource serves as a "tag",        or keyword/subject, for the referring page, or some portion of the referring page (such as an xFolk tagged bookmark entry).</dd>    </dl>   </dd>   <dt id="class">class</dt>   <dd><p>     <a href="http://www.w3.org/TR/html401/struct/global.html#adef-class">     HTML4 definition of the 'class' attribute.</a>     This meta data profile defines some 'class' attribute values (class names)      and their meanings as suggested by a      <a href="http://www.w3.org/TR/WD-htmllink-970328#profile">     draft of "Hypertext Links in HTML"</a>.     All values are defined according to the semantics defined in the      <a rel="help start" href="http://microformats.org/wiki/xfolk">      xFolk specification</a>.</p>      <dl>       <dt id="xfolkentry">xfolkentry</dt>       <dd>Indicates a container element for an xFolk entry.  An xFolk entry indicates one bookmark with supporting metadata that the user wants to have aggregated into a folksonomy.  The xfolkentry class attribute value is usually applied to &lt;div&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;dt&gt;, &lt;p&gt; or &lt;span&gt; elements.  xFolk elements contained in an xfolkentry may be nested at an arbitrary depth.</dd>       <dt id="taggedlink">taggedlink</dt>       <dd>An &lt;a&gt; tag of class taggedlink indicates the URL of the item the xFolk entry bookmarks.  One and only one &lt;a&gt; element of class taggedlink must occur within each element of class xfolkentry.  The title of the bookmark is in order of availability: (1) the value of an optional title attribute; (2) The value of the &lt;a&gt; element itself.</dd>       <dt id="description">description</dt>       <dd>A further description of the xFolk entry.  Typically applied to &lt;dd&gt;, &lt;li&gt;, &lt;p&gt;, and &lt;span&gt; elements.  Elements of class <code>description</code> are optional and may occur multiply.  When multiple elements of class <code>description</code> are present, they are assumed to be in document order.</dd>       <dt id="extended">extended</dt>       <dd>A deprecated class value that is equivalent to <code>description</code>.</dd>     </dl>   </dd> </dl><h2>Copyright</h2><p id="copyright">Copyright &copy; 2005&#8211;2009 by the <a href="#authors">authors</a>. <a rel="license" href="http://creativecommons.org/licenses/by/1.0/">Some rights reserved</a>.</p></body>
-<!-- Mirrored from microformats.org/profile/xfolk by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Mar 2015 21:59:26 GMT -->
-</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><!-- Mirrored from microformats.org/profile/xfolk by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Jun 2015 09:07:52 GMT --><head profile="http://gmpg.org/xmdp/1 http://microformats.org/profile/rel-license http://microformats.org/profile/hcard"><title>xFolk RC1 XMDP profile</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<style type="text/css">
+/*<![CDATA[*/
+body { background: #FCFAEA; color: black; font: small/1.2 Verdana, Arial, sans-serif; margin: 0; padding: 2em 10%; }
+dl { margin:0 0 0 2em }
+dt { font-weight:bold } 
+h3 { margin:0; font-weight:normal; font-size:1em } 
+h3:first-letter { text-transform:capitalize; }
+h2 a { display:block; margin-left:2em }
+#warning { border: 1px solid red; background-color: #c33; padding: 1em;}
+/*]]>*/
+</style>
+<link href="#copyright" rel="copyright" title="Copyright"/>
+</head>
+<body>
+<h1>xFolk RC1 <abbr title="XHTML Meta Data Profile">XMDP</abbr> profile</h1>
+<h2>Authors</h2>
+<ul id="authors">
+<li class="vcard"><a class="fn url uid" href="http://tantek.com/">Tantek Çelik</a></li>
+<li class="vcard"><a class="fn url" href="http://thecommunityengine.com/">Bud Gibson</a></li>
+</ul>
+<p>As described in <a href="http://www.w3.org/TR/html401/struct/global.html#h-7.4.4.3">HTML4 Meta data profiles</a>, and <a href="http://gmpg.org/xmdp/description">XHTML Meta Data Profile (XMDP) description</a>.</p>
+
+ <dl class="profile">
+   <dt id="rel"><a class="dashAnchor" name="//apple_ref/cpp/Property/rel"></a>rel</dt>
+   <dd><p>
+     <a href="http://www.w3.org/TR/html401/struct/links.html#adef-rel" rel="help">
+       HTML4 definition of the 'rel' attribute.</a>  
+     Here is an additional value as defined in the
+     <a href="http://microformats.org/wiki/rel-tag" rel="help start">
+     rel-tag specification</a> 
+     .</p>
+    <dl>
+     <dt id="tag"><a class="dashAnchor" name="//apple_ref/cpp/Property/tag"></a>tag</dt>
+   <dd>Indicates that the referred resource serves as a "tag", 
+       or keyword/subject, for the referring page, or some portion of the referring page (such as an xFolk tagged bookmark entry).</dd>
+    </dl>
+   </dd>
+   <dt id="class"><a class="dashAnchor" name="//apple_ref/cpp/Property/class"></a>class</dt>
+   <dd><p>
+     <a href="http://www.w3.org/TR/html401/struct/global.html#adef-class">
+     HTML4 definition of the 'class' attribute.</a>
+     This meta data profile defines some 'class' attribute values (class names) 
+     and their meanings as suggested by a 
+     <a href="http://www.w3.org/TR/WD-htmllink-970328#profile">
+     draft of "Hypertext Links in HTML"</a>.
+     All values are defined according to the semantics defined in the 
+     <a href="http://microformats.org/wiki/xfolk" rel="help start">
+      xFolk specification</a>.</p> 
+     <dl>
+       <dt id="xfolkentry"><a class="dashAnchor" name="//apple_ref/cpp/Property/xfolkentry"></a>xfolkentry</dt>
+       <dd>Indicates a container element for an xFolk entry.  An xFolk entry indicates one bookmark with supporting metadata that the user wants to have aggregated into a folksonomy.  The xfolkentry class attribute value is usually applied to &lt;div&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;dt&gt;, &lt;p&gt; or &lt;span&gt; elements.  xFolk elements contained in an xfolkentry may be nested at an arbitrary depth.</dd>
+       <dt id="taggedlink"><a class="dashAnchor" name="//apple_ref/cpp/Property/taggedlink"></a>taggedlink</dt>
+       <dd>An &lt;a&gt; tag of class taggedlink indicates the URL of the item the xFolk entry bookmarks.  One and only one &lt;a&gt; element of class taggedlink must occur within each element of class xfolkentry.  The title of the bookmark is in order of availability: (1) the value of an optional title attribute; (2) The value of the &lt;a&gt; element itself.</dd>
+       <dt id="description"><a class="dashAnchor" name="//apple_ref/cpp/Property/description"></a>description</dt>
+       <dd>A further description of the xFolk entry.  Typically applied to &lt;dd&gt;, &lt;li&gt;, &lt;p&gt;, and &lt;span&gt; elements.  Elements of class <code>description</code> are optional and may occur multiply.  When multiple elements of class <code>description</code> are present, they are assumed to be in document order.</dd>
+       <dt id="extended"><a class="dashAnchor" name="//apple_ref/cpp/Property/extended"></a>extended</dt>
+       <dd>A deprecated class value that is equivalent to <code>description</code>.</dd>
+     </dl>
+   </dd>
+ </dl>
+
+<h2>Copyright</h2>
+<p id="copyright">Copyright © 2005–2009 by the <a href="#authors">authors</a>. <a href="http://creativecommons.org/licenses/by/1.0/" rel="license">Some rights reserved</a>.</p>
+
+
+
+
+</body><!-- Mirrored from microformats.org/profile/xfolk by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Jun 2015 09:07:52 GMT --></html>

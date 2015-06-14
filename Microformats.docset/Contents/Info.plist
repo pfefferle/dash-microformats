@@ -8,6 +8,8 @@
 	<string>Microformats</string>
 	<key>DocSetPlatformFamily</key>
 	<string>microformats</string>
+	<key>DashDocSetFamily</key>
+	<string>dashtoc</string>
 	<key>dashIndexFilePath</key>
 	<string>microformats.org/profile/specs/index.html</string>
 	<key>isDashDocset</key>

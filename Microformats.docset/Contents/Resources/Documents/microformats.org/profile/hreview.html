@@ -1,5 +1,163 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- Mirrored from microformats.org/profile/hreview by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Mar 2015 21:59:26 GMT -->
-<head profile="http://gmpg.org/xmdp/1 http://microformats.org/profile/rel-license http://microformats.org/profile/hcard"><title>hReview 0.4 XMDP profile</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><style type="text/css">/*<![CDATA[*/body { background: #FCFAEA; color: black; font: small/1.2 Verdana, Arial, sans-serif; margin: 0; padding: 2em 10%; }dl { margin:0 0 0 2em }dt { font-weight:bold } h3 { margin:0; font-weight:normal; font-size:1em } h3:first-letter { text-transform:capitalize; }h2 a { display:block; margin-left:2em }#warning { border: 1px solid red; background-color: #c33; padding: 1em;}/*]]>*/</style><link rel="copyright" href="#copyright" title="Copyright" /></head><body><h1>hReview 0.4 <abbr title="XHTML Meta Data Profile">XMDP</abbr> profile</h1><h2>Author</h2><ul id="authors"><li class="vcard"><a class="fn url uid" href="http://tantek.com/">Tantek &Ccedil;elik</a></li></ul><p>As described in <a href="http://www.w3.org/TR/html401/struct/global.html#h-7.4.4.3">HTML4 Meta data profiles</a> and <a href="http://gmpg.org/xmdp/description">XHTML Meta Data Profile (XMDP) description</a>:</p><dl class="profile"> <dt id="rel">rel</dt> <dd><p>   <a rel="help" href="http://www.w3.org/TR/html401/struct/links.html#adef-rel">     HTML4 definition of the 'rel' attribute.</a>     Here are additional values as defined in the   <a rel="help start" href="http://microformats.org/wiki/rel-license">   rel-license</a> and   <a rel="help start" href="http://microformats.org/wiki/rel-tag">   rel-tag</a>    specifications.</p>  <dl>   <dt id="license">license</dt>   <dd>Indicates that the referred resource is a license for the referring hReview.</dd>   <dt id="self">self</dt>   <dd>Indicates that the referred resource serves as a permalink, for the referring hReview.</dd>   <dt id="tag">tag</dt>   <dd>Indicates that the referred resource serves as a "tag",        or keyword/subject, for the referring page, or some portion of the referring page (such as an hReview).</dd>  </dl> </dd> <dt>class</dt> <dd><p>   <a href="http://www.w3.org/TR/html401/struct/global.html#adef-class">   HTML4 definition of the 'class' attribute.</a>   This meta data profile defines some 'class' attribute values (class names)    and their meanings as suggested by a    <a href="http://www.w3.org/TR/WD-htmllink-970328#profile">   draft of "Hypertext Links in HTML"</a>.   All values are defined according to the semantics defined in the    <a rel="help start" href="http://microformats.org/wiki/hreview">   hReview specification</a>.  </p>  <dl>   <dt id="hreview">hreview</dt>    <dd>The root class name and container for a review.   </dd>   <dt id="version">version</dt>    <dd>This optional property permits hReview publishers to specify a particular version of hReview that their content uses. By omitting this property, the publisher is stating that implementations may interpret the hReviews according to any version of the hReview specification v0.2 or later. In practice the authors of this specification are committed to maintaining backward compatibility with content produced using earlier versions of the specification. This property is syntax compatible with, and thus reuses the semantics of "VERSION" as defined in vCard RFC2426 section "3.6.9 VERSION Type Definition".     </dd>   <dt id="summary">summary</dt>    <dd>This optional property serves as a short synopsis, title, or name of the review. Re-used from hCalendar which re-uses it from iCalendar (section 4.8.1.12 of RFC 2445).    </dd>   <dt id="type">type</dt>    <dd>This optional property provides the type of the item being reviewed, one of several enumerated values listed here:     <dl>      <dt>product</dt>      <dt>business</dt>      <dt>place</dt>      <dt>person</dt>      <dt>event</dt>      <dt>website</dt>      <dt>url</dt>     </dl>    </dd>   <dt id="item">item</dt>   <dd>The item the review is about. Depending on the type, it must be represented by a microformat on the item element itself:     <a href="http://microformats.org/wiki/hcard">hCard</a> (for a business, place, or person),      <a href="http://microformats.org/wiki/adr">adr</a> (for a place),      <a href="http://microformats.org/wiki/geo">geo</a> (for a place), or    <a href="http://microformats.org/wiki/hcalendar">hCalendar event</a> (for an event).   </dd>   <dt id="fn">fn</dt>    <dd>item subproperty. The formatted name of an item. Re-used from hCard which re-uses it from vCard (section 3.1.1 of RFC 2426).</dd>   <dt id="url">url</dt>    <dd>item subproperty. A URL of an item. This subproperty must be provided if the item is a "website" or "url". Re-used from hCard which re-uses it from vCard (section 3.6.8 of RFC 2426).</dd>   <dt id="photo">photo</dt>    <dd>item subproperty. A URL to a photo of an item. Re-used from hCard which re-uses it from vCard (section 3.1.4 of RFC 2426).</dd>   <dt id="reviewer">reviewer</dt>    <dd>This optional property provides information about the person who authored the review. If the value is provided then the same element that     has the class name of "reviewer" should use the class name of "vcard" and thus represent an embedded hCard.</dd>   <dt id="dtreviewed">dtreviewed</dt>    <dd>This optional property specifies the date and time (in ISO8601 date or date-time) that the review was written or otherwise authored.    </dd>   <dt id="rating">rating</dt>   <dd>This optional property specifies a fixed point integer (one decimal point of precision) from 1.0 to 5.0 inclusive indicating a rating for the item, higher indicating a better rating by default.  Optionally a different integral "worst" value and/or "best" subproperty may be specified to indicate a different range (e.g. 6 from 0-10).   </dd>   <dt id="worst">worst</dt>    <dd>rating subproperty. a rating value denoting the poorest rating possible for the item. default: 1.0.</dd>   <dt id="best">best</dt>    <dd>rating subproperty. a rating value denoting the best rating possible for the item. The "best" value may be numerically smaller than the "worst" value. default: 5.0.</dd>   <dt id="description">description</dt>    <dd>This optional property serves as a more detailed synopsis of the review than that provided by summary. Re-used from hCalendar which re-uses it from iCalendar (section 4.8.1.5 of RFC 2445.).    </dd>   <dt id="category">category</dt>   <dd>Category of the item.    Note: this property may be repeated (an item may belong in several categories). Re-used from hCalendar which re-uses it from iCalendar (section 4.8.1.2 of RFC 2445).   </dd>      <dt id="value">value</dt>    <dd>This class name is used to distinguish the <em>actual</em> value     of a property from any other cruft that may be in      the containing element representing the property.     See the      <a href="http://microformats.org/wiki/value-class-pattern">       value-class-pattern</a> for details.</dd>   <dt id="value-title">value-title</dt>    <dd>This class name is used to distinguish the <em>actual</em> value     of a property, specifically in the 'title' attribute of the element,     from the element contents and the element representing      the containing property.     See the      <a href="http://microformats.org/wiki/value-class-pattern#Parsing_value_from_a_title_attribute">       value-class-pattern value-title description</a> for details.</dd>  </dl> </dd></dl><h2>Changes from hReview 0.3</h2><ul id="changes"><li><p>The '<a href="#value-title">value-title</a>' class name has been incorporated from the <a href="http://microformats.org/wiki/value-class-pattern">value-class-pattern</a> for improved accessibility, internationalization, and localization.</p></li><li><p>The '<a href="#category">category</a>' property has been incorporated in order to provide more flexible tagging than just depending on rel-tag.</p></li></ul><h2>Copyright</h2><p id="copyright">Contributed to the public domain (PD) 2010 microformats.org, per the <a rel="license" href="http://creativecommons.org/licenses/publicdomain/">Creative Commons Public Domain License</a> or any later version published by Creative Commons; with a waiver of rights, and an assertion that no rights attach to this particular work.</p></body>
-<!-- Mirrored from microformats.org/profile/hreview by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Mar 2015 21:59:26 GMT -->
-</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><!-- Mirrored from microformats.org/profile/hreview by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Jun 2015 09:07:52 GMT --><head profile="http://gmpg.org/xmdp/1 http://microformats.org/profile/rel-license http://microformats.org/profile/hcard"><title>hReview 0.4 XMDP profile</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<style type="text/css">
+/*<![CDATA[*/
+body { background: #FCFAEA; color: black; font: small/1.2 Verdana, Arial, sans-serif; margin: 0; padding: 2em 10%; }
+dl { margin:0 0 0 2em }
+dt { font-weight:bold } 
+h3 { margin:0; font-weight:normal; font-size:1em } 
+h3:first-letter { text-transform:capitalize; }
+h2 a { display:block; margin-left:2em }
+#warning { border: 1px solid red; background-color: #c33; padding: 1em;}
+/*]]>*/
+</style>
+<link href="#copyright" rel="copyright" title="Copyright"/>
+</head>
+<body>
+<h1>hReview 0.4 <abbr title="XHTML Meta Data Profile">XMDP</abbr> profile</h1>
+<h2>Author</h2>
+<ul id="authors">
+<li class="vcard"><a class="fn url uid" href="http://tantek.com/">Tantek Çelik</a></li>
+</ul>
+<p>As described in <a href="http://www.w3.org/TR/html401/struct/global.html#h-7.4.4.3">HTML4 Meta data profiles</a> and <a href="http://gmpg.org/xmdp/description">XHTML Meta Data Profile (XMDP) description</a>:</p>
+
+<dl class="profile">
+ <dt id="rel"><a class="dashAnchor" name="//apple_ref/cpp/Property/rel"></a>rel</dt>
+ <dd><p>
+   <a href="http://www.w3.org/TR/html401/struct/links.html#adef-rel" rel="help">
+     HTML4 definition of the 'rel' attribute.</a>  
+   Here are additional values as defined in the
+   <a href="http://microformats.org/wiki/rel-license" rel="help start">
+   rel-license</a> and
+   <a href="http://microformats.org/wiki/rel-tag" rel="help start">
+   rel-tag</a> 
+   specifications.</p>
+  <dl>
+   <dt id="license"><a class="dashAnchor" name="//apple_ref/cpp/Property/license"></a>license</dt>
+   <dd>Indicates that the referred resource is a license for the referring hReview.</dd>
+   <dt id="self"><a class="dashAnchor" name="//apple_ref/cpp/Property/self"></a>self</dt>
+   <dd>Indicates that the referred resource serves as a permalink, for the referring hReview.</dd>
+   <dt id="tag"><a class="dashAnchor" name="//apple_ref/cpp/Property/tag"></a>tag</dt>
+   <dd>Indicates that the referred resource serves as a "tag", 
+       or keyword/subject, for the referring page, or some portion of the referring page (such as an hReview).</dd>
+  </dl>
+ </dd>
+ <dt><a class="dashAnchor" name="//apple_ref/cpp/Property/class"></a>class</dt>
+ <dd><p>
+   <a href="http://www.w3.org/TR/html401/struct/global.html#adef-class">
+   HTML4 definition of the 'class' attribute.</a>
+   This meta data profile defines some 'class' attribute values (class names) 
+   and their meanings as suggested by a 
+   <a href="http://www.w3.org/TR/WD-htmllink-970328#profile">
+   draft of "Hypertext Links in HTML"</a>.
+   All values are defined according to the semantics defined in the 
+   <a href="http://microformats.org/wiki/hreview" rel="help start">
+   hReview specification</a>.
+  </p>
+  <dl>
+   <dt id="hreview"><a class="dashAnchor" name="//apple_ref/cpp/Property/hreview"></a>hreview</dt>
+    <dd>The root class name and container for a review.
+   </dd>
+
+   <dt id="version"><a class="dashAnchor" name="//apple_ref/cpp/Property/version"></a>version</dt>
+    <dd>This optional property permits hReview publishers to specify a particular version of hReview that their content uses. By omitting this property, the publisher is stating that implementations may interpret the hReviews according to any version of the hReview specification v0.2 or later. In practice the authors of this specification are committed to maintaining backward compatibility with content produced using earlier versions of the specification. This property is syntax compatible with, and thus reuses the semantics of "VERSION" as defined in vCard RFC2426 section "3.6.9 VERSION Type Definition". 
+    </dd>
+
+   <dt id="summary"><a class="dashAnchor" name="//apple_ref/cpp/Property/summary"></a>summary</dt>
+    <dd>This optional property serves as a short synopsis, title, or name of the review. Re-used from hCalendar which re-uses it from iCalendar (section 4.8.1.12 of RFC 2445).
+    </dd>
+
+   <dt id="type"><a class="dashAnchor" name="//apple_ref/cpp/Property/type"></a>type</dt>
+    <dd>This optional property provides the type of the item being reviewed, one of several enumerated values listed here:
+     <dl>
+      <dt><a class="dashAnchor" name="//apple_ref/cpp/Property/product"></a>product</dt>
+      <dt><a class="dashAnchor" name="//apple_ref/cpp/Property/business"></a>business</dt>
+      <dt><a class="dashAnchor" name="//apple_ref/cpp/Property/place"></a>place</dt>
+      <dt><a class="dashAnchor" name="//apple_ref/cpp/Property/person"></a>person</dt>
+      <dt><a class="dashAnchor" name="//apple_ref/cpp/Property/event"></a>event</dt>
+      <dt><a class="dashAnchor" name="//apple_ref/cpp/Property/website"></a>website</dt>
+      <dt><a class="dashAnchor" name="//apple_ref/cpp/Property/url"></a>url</dt>
+     </dl>
+    </dd>
+
+   <dt id="item"><a class="dashAnchor" name="//apple_ref/cpp/Property/item"></a>item</dt>
+   <dd>The item the review is about. Depending on the type, it must be represented by a microformat on the item element itself: 
+    <a href="http://microformats.org/wiki/hcard">hCard</a> (for a business, place, or person),  
+    <a href="http://microformats.org/wiki/adr">adr</a> (for a place),  
+    <a href="http://microformats.org/wiki/geo">geo</a> (for a place), or
+    <a href="http://microformats.org/wiki/hcalendar">hCalendar event</a> (for an event).
+   </dd>
+
+   <dt id="fn"><a class="dashAnchor" name="//apple_ref/cpp/Property/fn"></a>fn</dt>
+    <dd>item subproperty. The formatted name of an item. Re-used from hCard which re-uses it from vCard (section 3.1.1 of RFC 2426).</dd>
+
+   <dt id="url"><a class="dashAnchor" name="//apple_ref/cpp/Property/url"></a>url</dt>
+    <dd>item subproperty. A URL of an item. This subproperty must be provided if the item is a "website" or "url". Re-used from hCard which re-uses it from vCard (section 3.6.8 of RFC 2426).</dd>
+
+   <dt id="photo"><a class="dashAnchor" name="//apple_ref/cpp/Property/photo"></a>photo</dt>
+    <dd>item subproperty. A URL to a photo of an item. Re-used from hCard which re-uses it from vCard (section 3.1.4 of RFC 2426).</dd>
+
+   <dt id="reviewer"><a class="dashAnchor" name="//apple_ref/cpp/Property/reviewer"></a>reviewer</dt>
+    <dd>This optional property provides information about the person who authored the review. If the value is provided then the same element that 
+    has the class name of "reviewer" should use the class name of "vcard" and thus represent an embedded hCard.</dd>
+
+   <dt id="dtreviewed"><a class="dashAnchor" name="//apple_ref/cpp/Property/dtreviewed"></a>dtreviewed</dt>
+    <dd>This optional property specifies the date and time (in ISO8601 date or date-time) that the review was written or otherwise authored.
+    </dd>
+
+   <dt id="rating"><a class="dashAnchor" name="//apple_ref/cpp/Property/rating"></a>rating</dt>
+   <dd>This optional property specifies a fixed point integer (one decimal point of precision) from 1.0 to 5.0 inclusive indicating a rating for the item, higher indicating a better rating by default.  
+Optionally a different integral "worst" value and/or "best" subproperty may be specified to indicate a different range (e.g. 6 from 0-10).
+   </dd>
+
+   <dt id="worst"><a class="dashAnchor" name="//apple_ref/cpp/Property/worst"></a>worst</dt>
+    <dd>rating subproperty. a rating value denoting the poorest rating possible for the item. default: 1.0.</dd>
+
+   <dt id="best"><a class="dashAnchor" name="//apple_ref/cpp/Property/best"></a>best</dt>
+    <dd>rating subproperty. a rating value denoting the best rating possible for the item. The "best" value may be numerically smaller than the "worst" value. default: 5.0.</dd>
+
+   <dt id="description"><a class="dashAnchor" name="//apple_ref/cpp/Property/description"></a>description</dt>
+    <dd>This optional property serves as a more detailed synopsis of the review than that provided by summary. Re-used from hCalendar which re-uses it from iCalendar (section 4.8.1.5 of RFC 2445.).
+    </dd>
+
+   <dt id="category"><a class="dashAnchor" name="//apple_ref/cpp/Property/category"></a>category</dt>
+   <dd>Category of the item.
+    Note: this property may be repeated (an item may belong in several categories). Re-used from hCalendar which re-uses it from iCalendar (section 4.8.1.2 of RFC 2445).
+   </dd>
+   
+   <dt id="value"><a class="dashAnchor" name="//apple_ref/cpp/Property/value"></a>value</dt>
+    <dd>This class name is used to distinguish the <em>actual</em> value
+     of a property from any other cruft that may be in 
+     the containing element representing the property.
+     See the 
+     <a href="http://microformats.org/wiki/value-class-pattern"> 
+      value-class-pattern</a> for details.</dd>
+
+   <dt id="value-title"><a class="dashAnchor" name="//apple_ref/cpp/Property/value-title"></a>value-title</dt>
+    <dd>This class name is used to distinguish the <em>actual</em> value
+     of a property, specifically in the 'title' attribute of the element,
+     from the element contents and the element representing 
+     the containing property.
+     See the 
+     <a href="http://microformats.org/wiki/value-class-pattern#Parsing_value_from_a_title_attribute"> 
+      value-class-pattern value-title description</a> for details.</dd>
+
+  </dl>
+ </dd>
+</dl>
+
+<h2>Changes from hReview 0.3</h2>
+<ul id="changes"><li><p>The '<a href="#value-title">value-title</a>' class name has been incorporated from the <a href="http://microformats.org/wiki/value-class-pattern">value-class-pattern</a> for improved accessibility, internationalization, and localization.
+</p></li>
+<li><p>The '<a href="#category">category</a>' property has been incorporated in order to provide more flexible tagging than just depending on rel-tag.</p>
+</li>
+</ul>
+
+<h2>Copyright</h2>
+<p id="copyright">Contributed to the public domain (PD) 2010 microformats.org, per the <a href="http://creativecommons.org/licenses/publicdomain/" rel="license">Creative Commons Public Domain License</a> or any later version published by Creative Commons; with a waiver of rights, and an assertion that no rights attach to this particular work.</p>
+
+
+
+
+</body><!-- Mirrored from microformats.org/profile/hreview by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Jun 2015 09:07:52 GMT --></html>
